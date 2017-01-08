@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NewsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news01.png" translatesAutoresizingMaskIntoConstraints="NO" id="tkj-q5-1kP">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="5Iv-xY-pXs"/>
+                            <constraint firstAttribute="width" constant="100" id="rQO-sg-gv4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保监会：拟将险企单一股东持股比例上限将至1/3" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFq-0F-aHV">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="51" id="MUc-GY-3ja"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3天前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0Y-t8-mOg">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="cBV-PD-Kyh"/>
+                            <constraint firstAttribute="width" constant="93" id="hnj-f1-7Bg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="tkj-q5-1kP" secondAttribute="trailing" id="30Y-K4-vE5"/>
+                    <constraint firstItem="tkj-q5-1kP" firstAttribute="leading" secondItem="KFq-0F-aHV" secondAttribute="trailing" constant="8" id="6K3-9W-F8f"/>
+                    <constraint firstItem="w0Y-t8-mOg" firstAttribute="leading" secondItem="KFq-0F-aHV" secondAttribute="leading" id="aiP-X5-NdO"/>
+                    <constraint firstItem="tkj-q5-1kP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="idt-Lm-uds"/>
+                    <constraint firstItem="KFq-0F-aHV" firstAttribute="top" secondItem="tkj-q5-1kP" secondAttribute="top" id="kVh-ri-5Oi"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="KFq-0F-aHV" secondAttribute="leading" constant="-8" id="mqN-97-zhv"/>
+                    <constraint firstItem="w0Y-t8-mOg" firstAttribute="bottom" secondItem="tkj-q5-1kP" secondAttribute="bottom" id="nx0-ho-WYs"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="news01.png" width="204" height="170"/>
+    </resources>
+</document>

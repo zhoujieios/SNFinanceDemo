@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="Finance04TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="财富资讯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mP-gr-TxP">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="PBf-3b-KgE"/>
+                            <constraint firstAttribute="width" constant="126" id="vrF-fv-epX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIK-JQ-jsH">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="AwI-yF-ViH"/>
+                            <constraint firstAttribute="height" constant="21" id="ISV-3I-ZU1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kwj-lo-2FC">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="blG-rA-m8B"/>
+                            <constraint firstAttribute="width" constant="8" id="pKv-b1-2U8"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJ8-6x-oYA">
+                        <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="H1j-Kh-nSs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="kJ8-6x-oYA" secondAttribute="trailing" constant="-8" id="8UY-T1-jZr"/>
+                    <constraint firstItem="5mP-gr-TxP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HFm-Ek-oTM"/>
+                    <constraint firstItem="5mP-gr-TxP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="ZLK-dE-hPJ"/>
+                    <constraint firstItem="fIK-JQ-jsH" firstAttribute="centerY" secondItem="Kwj-lo-2FC" secondAttribute="centerY" id="a04-CI-3Yr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kJ8-6x-oYA" secondAttribute="bottom" constant="-8.5" id="h5s-ab-ebN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Kwj-lo-2FC" secondAttribute="trailing" constant="4" id="lRC-vb-NMA"/>
+                    <constraint firstItem="kJ8-6x-oYA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="lxc-19-r8f"/>
+                    <constraint firstItem="Kwj-lo-2FC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rh9-qf-9jJ"/>
+                    <constraint firstItem="Kwj-lo-2FC" firstAttribute="leading" secondItem="fIK-JQ-jsH" secondAttribute="trailing" constant="1" id="ryy-g6-iWt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImageView" destination="Kwj-lo-2FC" id="BlK-aZ-Esh"/>
+                <outlet property="moreLabel" destination="fIK-JQ-jsH" id="Cx3-Hm-w1C"/>
+                <outlet property="titleLabel" destination="5mP-gr-TxP" id="3D5-Ap-qxU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rightArrow.png" width="9" height="16"/>
+    </resources>
+</document>

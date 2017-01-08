@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="Finance02TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f_04.png" translatesAutoresizingMaskIntoConstraints="NO" id="qUw-86-43F"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycX-GB-fow">
+                        <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="MxF-qI-Rhy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qUw-86-43F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="40N-GX-qTn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qUw-86-43F" secondAttribute="bottom" constant="-10" id="GTb-8H-Wfw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ycX-GB-fow" secondAttribute="bottom" constant="-8.5" id="HF1-Gt-XEn"/>
+                    <constraint firstItem="qUw-86-43F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="W2h-Fw-vkH"/>
+                    <constraint firstItem="ycX-GB-fow" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Zwv-5J-ldP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ycX-GB-fow" secondAttribute="trailing" constant="-8" id="diy-PE-wMJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qUw-86-43F" secondAttribute="trailing" constant="-8" id="kdh-nQ-n9p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="photoImageView" destination="qUw-86-43F" id="ipi-cy-lEF"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="f_04.png" width="856" height="87"/>
+    </resources>
+</document>

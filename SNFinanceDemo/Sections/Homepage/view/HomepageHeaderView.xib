@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomepageHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift.png" translatesAutoresizingMaskIntoConstraints="NO" id="WaY-cn-bG5">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="3KI-5j-sW1"/>
+                        <constraint firstAttribute="height" constant="20" id="9MV-QH-tR7"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMQ-YA-8ba">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment.png" translatesAutoresizingMaskIntoConstraints="NO" id="eO1-FA-jnJ">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="YxM-6e-98x"/>
+                                <constraint firstAttribute="width" constant="20" id="vKx-GI-1iQ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aln-tJ-P8M">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="J7G-NJ-n2Y"/>
+                                <constraint firstAttribute="width" constant="35" id="tzi-d3-umn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="3fU-eZ-iXN"/>
+                        <constraint firstItem="aln-tJ-P8M" firstAttribute="centerY" secondItem="eO1-FA-jnJ" secondAttribute="centerY" id="KEH-jg-p7o"/>
+                        <constraint firstAttribute="width" constant="62" id="Mom-N6-jeN"/>
+                        <constraint firstItem="eO1-FA-jnJ" firstAttribute="top" secondItem="xMQ-YA-8ba" secondAttribute="top" id="cRU-Dg-pzA"/>
+                        <constraint firstItem="eO1-FA-jnJ" firstAttribute="leading" secondItem="xMQ-YA-8ba" secondAttribute="leading" id="hff-mu-KiW"/>
+                        <constraint firstItem="aln-tJ-P8M" firstAttribute="leading" secondItem="eO1-FA-jnJ" secondAttribute="trailing" constant="7" id="kpt-8a-1Cl"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NYl-gX-l7U">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bill.png" translatesAutoresizingMaskIntoConstraints="NO" id="XYg-kw-rrO">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="tzx-UD-4eC"/>
+                                <constraint firstAttribute="height" constant="20" id="uXh-sO-d1f"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQ3-LD-MYS">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="B29-N9-s6i"/>
+                                <constraint firstAttribute="height" constant="21" id="cE4-vW-tAi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="pQ3-LD-MYS" firstAttribute="centerY" secondItem="XYg-kw-rrO" secondAttribute="centerY" id="1I2-Vh-Zpz"/>
+                        <constraint firstItem="pQ3-LD-MYS" firstAttribute="leading" secondItem="XYg-kw-rrO" secondAttribute="trailing" constant="7" id="4It-nU-xlQ"/>
+                        <constraint firstItem="XYg-kw-rrO" firstAttribute="top" secondItem="NYl-gX-l7U" secondAttribute="top" id="Abq-Yi-QDt"/>
+                        <constraint firstAttribute="width" constant="62" id="Qvd-Fu-7Hv"/>
+                        <constraint firstItem="XYg-kw-rrO" firstAttribute="leading" secondItem="NYl-gX-l7U" secondAttribute="leading" id="cpt-N6-S4m"/>
+                        <constraint firstAttribute="height" constant="20" id="o4D-Bb-hwe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NYl-gX-l7U" secondAttribute="trailing" constant="16" id="4WH-fl-koa"/>
+                <constraint firstItem="xMQ-YA-8ba" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="29" id="NBq-61-L5A"/>
+                <constraint firstItem="NYl-gX-l7U" firstAttribute="top" secondItem="xMQ-YA-8ba" secondAttribute="top" id="Wqc-8W-3Su"/>
+                <constraint firstItem="NYl-gX-l7U" firstAttribute="leading" secondItem="WaY-cn-bG5" secondAttribute="trailing" constant="8" id="ow1-pH-B0z"/>
+                <constraint firstItem="WaY-cn-bG5" firstAttribute="top" secondItem="NYl-gX-l7U" secondAttribute="top" id="pd2-fE-2n9"/>
+                <constraint firstItem="xMQ-YA-8ba" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="vYW-v3-kxt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="4" y="64"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bill.png" width="45" height="45"/>
+        <image name="comment.png" width="47" height="47"/>
+        <image name="gift.png" width="58" height="58"/>
+    </resources>
+</document>
